@@ -4,3 +4,4 @@ var Dish = function (name, photo, description, ingredients) {
     this.description = description || "";
     this.ingredients = ingredients || [];
 }
+module.exports = Dish;

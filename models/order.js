@@ -4,3 +4,4 @@ var Order = function (date, firstDish, secondDish, dessert) {
     this.secondDish = secondDish || null;
     this.dessert = dessert || null;
 }
+module.exports = Order;
