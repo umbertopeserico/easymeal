@@ -1,4 +1,5 @@
 var Order = require('../../models/order.js');
+var Dish = require('../../models/dish.js');
 describe('Order Model', function () {
     var order;
     beforeEach(function () {
@@ -27,5 +28,18 @@ describe('Order Model', function () {
     });
     it('should set dessert to null', function () {
         expect(order.dessert).toEqual(null);
+    });
+
+    describe('with parameters', function () {
+        beforeEach(function () {
+            order = new Order(new Date(2016, 12, 12, 0, 0, 0, 0), new Dish, new Dish, new Dish);
+        });
+
+        it('should set parameters', function () {
+            expect(order.date).toEqual(new Date(2016, 12, 12, 0, 0, 0, 0));
+            expect(order.firstDish).toEqual(new Dish);
+            expect(order.secondDish).toEqual(new Dish);
+            expect(order.dessert).toEqual(new Dish);
+        });
     });
 });
