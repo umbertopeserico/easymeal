@@ -28,4 +28,15 @@ describe('Dish Model', function () {
     it('should set ingredients to emty string', function () {
         expect(dish.ingredients).toEqual([]);
     });
+    describe('with parameters', function () {
+        beforeEach(function () {
+            dish = new Dish('Piatto 1', 'http://miafoto.it', 'Descrizione piatto', ['Ingrediente 1', 'Ingrediente 2']);
+        });
+        it('should set parameters', function () {
+            expect(dish.name).toEqual('Piatto 1');
+            expect(dish.photo).toEqual('http://miafoto.it');
+            expect(dish.description).toEqual('Descrizione piatto');
+            expect(dish.ingredients).toEqual(['Ingrediente 1', 'Ingrediente 2']);
+        })
+    });
 });
