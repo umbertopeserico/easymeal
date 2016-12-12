@@ -1,38 +1,39 @@
 {
-    "name": "easymeal",
-    "version": "0.0.0",
-    "private": true,
-    "engines": {
-        "node": "6.9.1"
-    },
-    "scripts": {
-        "start": "nodemon ./bin/www",
-        "production": "node ./bin/www",
-        "test": "./node_modules/jasmine/bin/jasmine.js"
-    },
-    "dependencies": {
-        "body-parser": "~1.15.2",
-        "cookie-parser": "~1.4.3",
-        "debug": "~2.2.0",
-        "express": "~4.14.0",
-        "morgan": "~1.7.0",
-        "pug": "~2.0.0-beta6",
-        "serve-favicon": "~2.3.0"
-    },
-    "description": "",
-    "main": "app.js",
-    "devDependencies": {
-        "jasmine": "^2.5.2",
-        "nodemon": "^1.11.0"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/umbertopeserico/easymeal.git"
-    },
-    "author": "Umberto Peserico",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/umbertopeserico/easymeal/issues"
-    },
-    "homepage": "https://github.com/umbertopeserico/easymeal#readme"
+  "name": "easymeal",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": "6.9.1"
+  },
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "production": "node ./bin/www",
+    "test": "./node_modules/jasmine/bin/jasmine.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "current-week-number": "^1.0.7",
+    "debug": "~2.2.0",
+    "express": "~4.14.0",
+    "morgan": "~1.7.0",
+    "pug": "~2.0.0-beta6",
+    "serve-favicon": "~2.3.0"
+  },
+  "description": "",
+  "main": "app.js",
+  "devDependencies": {
+    "jasmine": "^2.5.2",
+    "nodemon": "^1.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umbertopeserico/easymeal.git"
+  },
+  "author": "Umberto Peserico",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/umbertopeserico/easymeal/issues"
+  },
+  "homepage": "https://github.com/umbertopeserico/easymeal#readme"
 }
