@@ -1,4 +1,5 @@
 var DayMenu = require('../../models/dayMenu.js');
+var Dish = require('../../models/dish.js');
 describe('DayMenu model', function () {
     var dayMenu;
     beforeEach(function () {
@@ -29,6 +30,14 @@ describe('DayMenu model', function () {
         expect(dayMenu.desserts).toEqual([]);
     });
     describe('with parameters', function () {
-        pending("TO IMPLEMENT IN THE FUTURE");
+        beforeEach(function () {
+            dayMenu = new DayMenu(new Date(2016, 12, 12, 0, 0, 0, 0), [new Dish(), new Dish()], [new Dish(), new Dish()], [new Dish(), new Dish()]);
+        });
+        it('should set parameters', function () {
+            expect(dayMenu.date).toEqual(new Date(2016, 12, 12, 0, 0, 0, 0));
+            expect(dayMenu.firstDishes).toEqual([new Dish(), new Dish()]);
+            expect(dayMenu.secondDishes).toEqual([new Dish(), new Dish()]);
+            expect(dayMenu.desserts).toEqual([new Dish(), new Dish()]);
+        });
     });
 });
