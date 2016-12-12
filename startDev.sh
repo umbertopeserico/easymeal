@@ -1,3 +1,5 @@
 #!/bin/bash
 
-DEBUG=easymeal:* npm start
+export ENV=development
+export DEBUG=easymeal:*
+npm start
