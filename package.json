@@ -6,7 +6,8 @@
     "node": "6.9.1"
   },
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www",
+    "production": "node ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.15.2",
