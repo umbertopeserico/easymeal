@@ -13,5 +13,18 @@
     "morgan": "~1.7.0",
     "pug": "~2.0.0-beta6",
     "serve-favicon": "~2.3.0"
-  }
+  },
+  "description": "",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umbertopeserico/easymeal.git"
+  },
+  "author": "Umberto Peserico",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/umbertopeserico/easymeal/issues"
+  },
+  "homepage": "https://github.com/umbertopeserico/easymeal#readme"
 }
