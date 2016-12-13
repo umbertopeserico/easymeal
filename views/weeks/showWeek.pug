@@ -1,0 +1,19 @@
+extends ../layout
+
+block content
+    h1= "Settimana "+week.number
+    ul
+        li
+            a(href='/weeks/'+week.number+'/monday') Lunedì
+        li
+            a(href='#') Martedì
+        li
+            a(href='#') Mercoledì
+        li
+            a(href='#') Giovedì
+        li
+            a(href='#') Venerdì
+        li
+            a(href='#') Sabato
+        li
+            a(href='#') Domenica
